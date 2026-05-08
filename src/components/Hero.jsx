@@ -25,9 +25,9 @@ export default function Hero() {
       <Particles count={18} color="rgba(124,58,237,0.25)" />
 
       {/* ── LEFT devices ── */}
-      <div className="absolute left-0 hidden xl:block" style={{ zIndex: 2, top: 'calc(50% - 80px)', transform: 'translateY(-50%)' }}>
+      <div className="absolute left-0 hidden xl:block" style={{ zIndex: 2, top: 'calc(50% - 20px)', transform: 'translateY(-50%)' }}>
         <img
-          src="/devices.png"
+          src="/devices (2).png"
           alt="Electronics devices"
           className="h-[820px] w-auto object-contain select-none"
           draggable="false"
@@ -108,7 +108,7 @@ export default function Hero() {
       {/* ── RIGHT cash + wallet ── */}
       <div className="absolute right-0 hidden xl:block" style={{ zIndex: 2, top: 'calc(50% - 80px)', transform: 'translateY(-50%)' }}>
         <img
-          src="/cash image.png"
+          src="/cash.png"
           alt="Cash and wallet"
           className="h-[820px] w-auto object-contain select-none"
           draggable="false"
