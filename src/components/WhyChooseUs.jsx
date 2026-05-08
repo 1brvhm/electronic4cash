@@ -1,4 +1,4 @@
-import { Star, Shield, Zap, TrendingUp, Clock, BadgeCheck } from 'lucide-react';
+import { Star, Shield, Zap, TrendingUp, Clock } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const cells = [
@@ -7,12 +7,6 @@ const cells = [
     grad: 'from-yellow-400 to-orange-400',
     title: '20,000+ Reviews',
     desc:  'Just read the reviews — our customers consistently rate us 5 stars for speed and fairness.',
-  },
-  {
-    icon: BadgeCheck,
-    grad: 'from-blue-600 to-blue-400',
-    title: 'BBB Accredited',
-    desc:  'Accredited and rated A+ by the Better Business Bureau. Verified trustworthy.',
   },
   {
     icon: Zap,

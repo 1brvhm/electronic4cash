@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { Smartphone, Tablet, Laptop, Monitor, Watch, Gamepad2, Camera, Headphones, Cpu, Tv, Speaker, Wind } from 'lucide-react';
+import { Smartphone, Tablet, Laptop, Monitor, Gamepad2, Camera, Headphones, Cpu, Tv, Speaker, Wind } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const cats = [
@@ -7,9 +7,8 @@ const cats = [
   { icon: Tablet,     label: 'Sell Tablet',         color: 'from-blue-600 to-blue-400',     glow: '59,130,246'  },
   { icon: Laptop,     label: 'Sell Laptop',         color: 'from-indigo-600 to-indigo-400', glow: '99,102,241'  },
   { icon: Monitor,    label: 'Sell Desktop',        color: 'from-violet-600 to-blue-500',   glow: '124,58,237'  },
-  { icon: Watch,      label: 'Sell Smartwatch',     color: 'from-blue-500 to-cyan-400',     glow: '59,130,246'  },
   { icon: Gamepad2,   label: 'Sell Game Console',   color: 'from-purple-600 to-violet-400', glow: '147,51,234'  },
-  { icon: Cpu,        label: 'Sell Graphics Card',  color: 'from-indigo-500 to-blue-400',   glow: '99,102,241'  },
+  { icon: Cpu,        label: 'Sell Graphics Card (GPU)', color: 'from-indigo-500 to-blue-400', glow: '99,102,241' },
   { icon: Camera,     label: 'Sell Camera',         color: 'from-violet-700 to-purple-500', glow: '109,40,217'  },
   { icon: Headphones, label: 'Sell Audio',          color: 'from-blue-600 to-indigo-500',   glow: '59,130,246'  },
   { icon: Wind,       label: 'Sell Drone',          color: 'from-cyan-600 to-blue-500',     glow: '8,145,178'   },
@@ -39,15 +38,15 @@ function CatCard({ icon: Icon, label, color, glow, delay = '0ms' }) {
 
   return (
     <div ref={ref} className={`sr-scale ${vis ? 'in' : ''}`} style={{ transitionDelay: delay }}>
-      <div ref={cardRef} onMouseMove={onMove} onMouseLeave={onLeave}
-        className="tilt group bg-white rounded-2xl p-6 border border-gray-100 cursor-pointer flex flex-col items-center gap-3 text-center hover:border-violet-200 hover:shadow-lg hover:shadow-violet-100/60 transition-all duration-200">
+      <a href="#book" ref={cardRef} onMouseMove={onMove} onMouseLeave={onLeave}
+        className="tilt group bg-white rounded-2xl p-6 border border-gray-100 flex flex-col items-center gap-3 text-center hover:border-violet-200 hover:shadow-lg hover:shadow-violet-100/60 transition-all duration-200 block">
         <div className={`w-14 h-14 bg-gradient-to-br ${color} rounded-2xl flex items-center justify-center shadow-lg card-icon`}>
           <Icon className="w-7 h-7 text-white" strokeWidth={1.8} />
         </div>
         <span className="text-[14px] font-bold text-gray-800 group-hover:text-violet-600 transition-colors leading-snug">
           {label}
         </span>
-      </div>
+      </a>
     </div>
   );
 }

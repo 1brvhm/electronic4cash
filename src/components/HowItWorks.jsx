@@ -78,7 +78,7 @@ function PaidMock() {
 const steps = [
   { n:'01', icon: Clock,      title: 'Get your Instant Quote',  desc: 'Book a free 10-min call. We evaluate your device and lock in a firm quote before you say "goodbye, clutter."', mock: <QuoteMock /> },
   { n:'02', icon: Package,    title: 'Ship for Free',           desc: 'Print the free, trackable prepaid label and send it off. Fully insured. We handle the rest.', mock: <ShipMock /> },
-  { n:'03', icon: DollarSign, title: 'Get Paid Fast',           desc: 'No listings, no strangers, no waiting. Get paid within 24 hours of inspection — PayPal, Zelle, or cash.', mock: <PaidMock /> },
+  { n:'03', icon: DollarSign, title: 'Get Paid Fast',           desc: 'No listings, no strangers, no waiting. Get paid within 24 hours of inspection — PayPal or Zelle.', mock: <PaidMock /> },
 ];
 
 export default function HowItWorks() {
@@ -152,7 +152,7 @@ export default function HowItWorks() {
 
         <div className="text-center mt-12">
           <a href="#book" className="btn inline-flex items-center gap-2 px-10 py-4 rounded-2xl font-bold text-base group">
-            Start selling now
+            Book A Free Meeting
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>

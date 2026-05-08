@@ -59,14 +59,14 @@ export default function Hero() {
         </h1>
 
         <p className="h3 text-gray-500 text-[1.05rem] leading-relaxed max-w-[400px] mb-9">
-          Sell your used electronics in minutes — instant quote, free shipping, and fast payment via PayPal, Zelle, or cash.
+          Sell your used electronics in minutes — instant quote, free shipping, and fast payment via PayPal or Zelle.
         </p>
 
         {/* CTA */}
         <div className="h4 flex flex-wrap gap-4 justify-center mb-10">
           <a href="#book"
             className="btn inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-bold text-base group">
-            Sell Your Device
+            Book A Free Meeting
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a href="#how-it-works"
@@ -90,7 +90,7 @@ export default function Hero() {
             <div className="flex gap-0.5 mb-0.5">
               {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />)}
             </div>
-            <p className="text-gray-500 text-xs font-semibold">4.9 / 5 · 2,400+ verified sellers</p>
+            <p className="text-gray-500 text-xs font-semibold">4.9 / 5 · 1,200+ verified sellers</p>
           </div>
         </div>
 
@@ -121,10 +121,10 @@ export default function Hero() {
         <div className="grid grid-cols-2 md:grid-cols-4 rounded-2xl overflow-hidden border border-gray-200/80 shadow-sm"
           style={{ background: 'rgba(255,255,255,0.8)', backdropFilter: 'blur(8px)' }}>
           {[
-            { v: '$2.4M+', l: 'Paid to sellers'   },
-            { v: '10K+',   l: 'Happy customers'   },
-            { v: '24hrs',  l: 'Avg payout time'   },
-            { v: '4.9★',   l: 'Trustpilot rating' },
+            { v: '1.2M',   l: 'Paid to sellers'      },
+            { v: '6,000+', l: 'Happy customers'      },
+            { v: '1,200',  l: 'Verified reviews'     },
+            { v: '24hrs',  l: 'Avg payout time'      },
           ].map(({ v, l }, i) => (
             <div key={l}
               className={`px-6 py-5 text-center sr sr-d${i+1}`}

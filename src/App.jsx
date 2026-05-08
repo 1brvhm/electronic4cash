@@ -14,12 +14,12 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <DeviceCategories />
         <HowItWorks />
-        <WhyChooseUs />
-        <Testimonials />
-        <FAQ />
         <CTABanner />
+        <Testimonials />
+        <WhyChooseUs />
+        <DeviceCategories />
+        <FAQ />
       </main>
       <Footer />
     </div>

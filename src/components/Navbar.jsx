@@ -43,7 +43,7 @@ export default function Navbar() {
 
           <a href="#book"
             className="hidden md:inline-flex btn items-center gap-1.5 px-5 py-2.5 rounded-xl text-[14px] font-bold">
-            Get an Offer →
+            Book A Free Meeting
           </a>
 
           <button className="md:hidden text-gray-600 hover:text-violet-600 p-1 transition-colors"
@@ -62,7 +62,7 @@ export default function Navbar() {
             ))}
             <a href="#book" onClick={() => setOpen(false)}
               className="block mt-3 btn px-5 py-3 rounded-xl text-[14px] font-bold text-center">
-              Get an Offer
+              Book A Free Meeting
             </a>
           </div>
         </div>

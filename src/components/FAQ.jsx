@@ -4,17 +4,17 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const faqs = [
   { q: 'How and when will I get paid?',
-    a: 'Once we receive and inspect your device — typically within 1 business day — we send payment within 24 hours. Choose PayPal, Zelle, or cash.' },
+    a: 'Once we receive and inspect your device — typically within 1 business day — we send payment within 24 hours. Choose PayPal or Zelle.' },
   { q: 'Do I need to include the charger or original box?',
     a: "Not required, but accessories can increase your offer. We walk through exactly what adds value on your booking call." },
   { q: 'What condition does my device need to be in?',
     a: 'We accept all conditions — mint to cracked or faulty. Condition affects the quoted price, explained clearly on the call. Even broken devices often have real value.' },
   { q: 'Is the shipping really 100% free?',
     a: 'Yes. After your call, we email a prepaid, fully insured label. Print it, pack your device, and drop it at any USPS, UPS, or FedEx. Zero cost to you.' },
-  { q: "What if I change my mind after shipping?",
-    a: "No problem. If you pass on the offer after inspection, we ship your device back to you free of charge. No pressure, ever." },
   { q: 'Is my personal data safe?',
     a: 'We strongly recommend a factory reset before shipping. If you forget, we perform a certified secure wipe. We never access personal files or accounts.' },
+  { q: 'Can I sell anything else besides electronics?',
+    a: "If you have something that's worth selling, bring it up in our meeting and we'll happily take a look at it to see if we can buy it." },
 ];
 
 function Item({ q, a, open, onToggle }) {

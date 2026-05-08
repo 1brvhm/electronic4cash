@@ -88,23 +88,17 @@
 
 /* ── Gradient button ── */
 .btn {
-  background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 50%, #3b82f6 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 40%, #3b82f6 100%);
+  background-size: 200% auto;
   color: #fff;
-  position: relative;
-  overflow: hidden;
-  transition: transform .22s ease, box-shadow .22s ease;
+  transition: background-position .4s ease, transform .22s ease, box-shadow .22s ease;
 }
-.btn::after {
-  content:'';
-  position:absolute; inset:0;
-  background: linear-gradient(135deg,#9333ea,#6366f1,#38bdf8);
-  opacity:0;
-  transition: opacity .22s ease;
+.btn:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 36px rgba(124,58,237,.45), 0 4px 14px rgba(59,130,246,.2);
 }
-.btn:hover { transform:translateY(-2px); box-shadow:0 10px 36px rgba(124,58,237,.45),0 4px 14px rgba(59,130,246,.2); }
-.btn:hover::after { opacity:1; }
-.btn:active  { transform:translateY(0); }
-.btn > * { position:relative; z-index:1; }
+.btn:active { transform: translateY(0); }
 
 /* ── Card hover tilt (JS sets transform) ── */
 .tilt { transition: transform .18s ease, box-shadow .18s ease; transform-style: preserve-3d; }

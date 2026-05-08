@@ -1,15 +1,9 @@
-import { Zap, ArrowRight, Twitter, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { Zap, ArrowRight } from 'lucide-react';
 
 const cols = [
   { h: 'Quick Links', links: ['How It Works', 'What We Buy', 'Get a Quote', 'Sell in Bulk'] },
   { h: 'Company',     links: ['About Us', 'Blog', 'Careers', 'Contact Us']                  },
   { h: 'Legal',       links: ['Terms of Service', 'Privacy Policy', 'Shipping Policy', 'Refund Policy'] },
-];
-const socials = [
-  { icon: Twitter,   label: 'Twitter'   },
-  { icon: Instagram, label: 'Instagram' },
-  { icon: Youtube,   label: 'YouTube'   },
-  { icon: Linkedin,  label: 'LinkedIn'  },
 ];
 
 export default function Footer() {
@@ -36,25 +30,15 @@ export default function Footer() {
             </a>
 
             <p className="text-gray-400 text-[13.5px] leading-relaxed mb-6 max-w-[220px]">
-              The simplest way to turn your used electronics into real money. Trusted by 10,000+ sellers.
+              The simplest way to turn your used electronics into real money. Trusted by 6,000+ sellers.
             </p>
 
             {/* Payment badges */}
-            <div className="flex flex-wrap gap-2 mb-6">
-              {['PayPal', 'Zelle', 'Cash'].map(m => (
+            <div className="flex flex-wrap gap-2">
+              {['PayPal', 'Zelle'].map(m => (
                 <span key={m} className="text-gray-300 text-[12px] font-semibold px-3 py-1.5 rounded-lg border border-white/15 bg-white/[0.06]">
                   {m}
                 </span>
-              ))}
-            </div>
-
-            {/* Social icons */}
-            <div className="flex gap-3">
-              {socials.map(({ icon: Icon, label }) => (
-                <a key={label} href="#" aria-label={label}
-                  className="w-8 h-8 rounded-lg border border-white/15 bg-white/[0.05] flex items-center justify-center text-gray-400 hover:text-white hover:border-violet-500/50 hover:bg-violet-600/20 transition-all duration-200">
-                  <Icon className="w-4 h-4" />
-                </a>
               ))}
             </div>
           </div>
@@ -80,7 +64,7 @@ export default function Footer() {
           <p className="text-gray-500 text-[12px] font-medium">© 2025 electronics4cash. All rights reserved. Built in the USA.</p>
           <a href="#book"
             className="btn inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-sm font-bold group">
-            Start Selling <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            Book A Free Meeting <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </a>
         </div>
       </div>
