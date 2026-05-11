@@ -27,7 +27,7 @@ export default function Hero() {
       {/* ── LEFT devices ── */}
       <div className="absolute left-0 hidden xl:block" style={{ zIndex: 2, top: 'calc(50% - 20px)', transform: 'translateY(-50%)' }}>
         <img
-          src="/devices (2).png"
+          src="/devices (3).png"
           alt="Electronics devices"
           className="h-[820px] w-auto object-contain select-none"
           draggable="false"
