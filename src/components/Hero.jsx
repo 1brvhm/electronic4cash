@@ -29,7 +29,7 @@ export default function Hero() {
         <img
           src="/devices (3).png"
           alt="Electronics devices"
-          className="h-[940px] w-auto object-contain select-none"
+          className="h-[870px] w-auto object-contain select-none"
           draggable="false"
           style={{ animation: 'slideInL .95s cubic-bezier(.16,1,.3,1) .2s both' }}
         />
