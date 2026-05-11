@@ -90,7 +90,7 @@ export default function Hero() {
             <div className="flex gap-0.5 mb-0.5">
               {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />)}
             </div>
-            <p className="text-gray-500 text-xs font-semibold">4.9 / 5 · 1,200+ verified sellers</p>
+            <p className="text-gray-500 text-xs font-semibold">4.9 / 5 · 900+ verified sellers</p>
           </div>
         </div>
 
@@ -123,7 +123,7 @@ export default function Hero() {
           {[
             { v: '1.2M',   l: 'Paid to sellers'      },
             { v: '6,000+', l: 'Happy customers'      },
-            { v: '1,200',  l: 'Verified reviews'     },
+            { v: '900',    l: 'Verified reviews'     },
             { v: '24hrs',  l: 'Avg payout time'      },
           ].map(({ v, l }, i) => (
             <div key={l}

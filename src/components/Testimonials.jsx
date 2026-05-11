@@ -67,7 +67,7 @@ export default function Testimonials() {
                   </div>
                 ))}
               </div>
-              <div className="text-[11px] text-gray-500 font-semibold">4.9 out of 5 · 2,400+ reviews</div>
+              <div className="text-[11px] text-gray-500 font-semibold">4.9 out of 5 · 900 reviews</div>
             </div>
           </div>
         </div>

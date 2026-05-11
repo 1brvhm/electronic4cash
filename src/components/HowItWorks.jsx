@@ -78,7 +78,7 @@ function PaidMock() {
 const steps = [
   { n:'01', icon: Clock,      title: 'Get your Instant Quote',  desc: 'Book a free 10-min call. We evaluate your device and lock in a firm quote before you say "goodbye, clutter."', mock: <QuoteMock /> },
   { n:'02', icon: Package,    title: 'Ship for Free',           desc: 'Print the free, trackable prepaid label and send it off. Fully insured. We handle the rest.', mock: <ShipMock /> },
-  { n:'03', icon: DollarSign, title: 'Get Paid Fast',           desc: 'No listings, no strangers, no waiting. Get paid within 24 hours of inspection — PayPal or Zelle.', mock: <PaidMock /> },
+  { n:'03', icon: DollarSign, title: 'Get Paid Fast',           desc: 'No listings, no strangers, no waiting. Get paid within 24 hours of inspection — PayPal, Zelle, or other payment methods if needed.', mock: <PaidMock /> },
 ];
 
 export default function HowItWorks() {
