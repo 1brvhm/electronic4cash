@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
               <span className="text-[17px] font-extrabold"
                 style={{ background: 'linear-gradient(135deg,#a78bfa,#60a5fa)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent' }}>
-                electronics4cash
+                electronics4money
               </span>
             </a>
 
@@ -61,7 +61,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/[0.08] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-[12px] font-medium">© 2025 electronics4cash. All rights reserved. Built in the USA.</p>
+          <p className="text-gray-500 text-[12px] font-medium">© 2025 electronics4money. All rights reserved. Built in the USA.</p>
           <a href="#book"
             className="btn inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-sm font-bold group">
             Book A Free Meeting <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />

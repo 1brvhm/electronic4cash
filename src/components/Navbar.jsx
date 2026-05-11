@@ -28,7 +28,7 @@ export default function Navbar() {
               <Zap className="w-4 h-4 text-white fill-white group-hover:animate-spin-slow" />
             </div>
             <span className="text-[17px] font-extrabold bg-gradient-to-r from-violet-600 to-blue-500 bg-clip-text text-transparent tracking-tight">
-              electronics4cash
+              electronics4money
             </span>
           </a>
 
