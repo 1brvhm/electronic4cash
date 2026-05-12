@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { Smartphone, Tablet, Laptop, Monitor, Gamepad2, Camera, Headphones, Cpu, Speaker, Wind, Plus } from 'lucide-react';
+import { Smartphone, Tablet, Laptop, Monitor, Gamepad2, Camera, Headphones, Cpu, Speaker, Wind, Sparkles } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const cats = [
@@ -13,7 +13,7 @@ const cats = [
   { icon: Headphones, label: 'Sell Audio',          color: 'from-blue-600 to-indigo-500',   glow: '59,130,246'  },
   { icon: Wind,       label: 'Sell Drone',          color: 'from-cyan-600 to-blue-500',     glow: '8,145,178'   },
   { icon: Speaker,    label: 'Sell Smart Home',     color: 'from-indigo-600 to-violet-500', glow: '99,102,241'  },
-  { icon: Plus,       label: 'Other',               color: 'from-violet-500 to-blue-400',   glow: '124,58,237'  },
+  { icon: Sparkles,   label: 'Other (Anything else you want to sell)', color: 'from-violet-500 to-blue-400', glow: '124,58,237' },
 ];
 
 function CatCard({ icon: Icon, label, color, glow, delay = '0ms' }) {
