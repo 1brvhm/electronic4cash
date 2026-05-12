@@ -81,7 +81,7 @@ export default function CTABanner() {
         <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl"
           style={{ border: '1px solid rgba(255,255,255,0.08)' }}>
           <iframe
-            src="https://calendly.com/jacob-cheetahscanner/electronics4cash-call?background_color=160534&text_color=ffffff&primary_color=7c3aed&hide_gdpr_banner=1"
+            src="https://calendly.com/electronics4money/30min?background_color=160534&text_color=ffffff&primary_color=7c3aed&hide_gdpr_banner=1"
             width="100%"
             height="700"
             frameBorder="0"
