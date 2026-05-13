@@ -105,6 +105,24 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* ── MOBILE / TABLET — side-by-side images ── */}
+      <div className="xl:hidden relative z-10 flex items-end justify-center gap-0 sm:gap-2 pt-2 pb-4 px-2">
+        <img
+          src="/devices (3).png"
+          alt="Electronics devices"
+          className="w-1/2 max-w-[340px] h-auto object-contain object-bottom select-none"
+          draggable="false"
+          style={{ animation: 'slideInL .95s cubic-bezier(.16,1,.3,1) .2s both' }}
+        />
+        <img
+          src="/cash.png"
+          alt="Cash and wallet"
+          className="w-1/2 max-w-[340px] h-auto object-contain object-bottom select-none"
+          draggable="false"
+          style={{ animation: 'slideInR .95s cubic-bezier(.16,1,.3,1) .35s both' }}
+        />
+      </div>
+
       {/* ── RIGHT cash + wallet ── */}
       <div className="absolute right-0 hidden xl:block" style={{ zIndex: 2, top: 'calc(50% - 80px)', transform: 'translateY(-50%)' }}>
         <img
