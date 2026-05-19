@@ -22,10 +22,12 @@ export default function ContactVideo() {
           />
         </div>
 
-        {/* Bold headline */}
+        {/* Heading + subheading */}
         <div ref={textRef} className={`text-center sr ${textVis ? 'in' : ''}`}>
-          <p className="font-extrabold text-gray-900 leading-relaxed"
-             style={{ fontSize: 'clamp(1.25rem, 2.6vw, 1.7rem)' }}>
+
+          {/* Big heading */}
+          <h2 className="font-extrabold text-gray-900 leading-tight tracking-tight mb-6"
+              style={{ fontSize: 'clamp(1.7rem, 4vw, 2.6rem)' }}>
             Text the word{' '}
             <span className="bg-gradient-to-r from-violet-600 to-blue-500 bg-clip-text text-transparent">"electronics"</span>
             {' '}to{' '}
@@ -38,10 +40,16 @@ export default function ContactVideo() {
                className="text-violet-700 hover:text-violet-800 underline decoration-2 underline-offset-4 inline-block whitespace-nowrap">
               electronics4money@gmail.com
             </a>
-            {' '}if you have any question or you're just busy and want to speak to someone as{' '}
-            <span className="bg-gradient-to-r from-violet-600 to-blue-500 bg-clip-text text-transparent">FAST</span>
+          </h2>
+
+          {/* Subheading */}
+          <p className="text-gray-700 leading-relaxed font-bold max-w-2xl mx-auto"
+             style={{ fontSize: 'clamp(1rem, 1.6vw, 1.15rem)' }}>
+            If you have any question or you're just busy and want to speak to someone as{' '}
+            <span className="font-bold bg-gradient-to-r from-violet-600 to-blue-500 bg-clip-text text-transparent">FAST</span>
             {' '}as possible before your meeting. A representative will get back to your number or email ASAP!
           </p>
+
         </div>
 
       </div>
